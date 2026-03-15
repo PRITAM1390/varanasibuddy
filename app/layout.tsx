@@ -4,9 +4,17 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import config from './config'
 
+// export const metadata: Metadata = {
+//   title: config.metaTitle,
+//   description: config.metaDescription,
+// }
+
 export const metadata: Metadata = {
   title: config.metaTitle,
   description: config.metaDescription,
+  verification: {
+    google: 'g-RBZNPXx1xQYCOctFcqjwKRZugKrYhAfwHCqTkUqcg',
+  },
 }
 
 export default function RootLayout({
