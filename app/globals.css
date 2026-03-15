@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Hind:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --saffron: #E85D04;
+  --gold: #C9781A;
+  --deep-red: #9B2226;
+  --cream: #FDF6EC;
+  --earth: #6B4226;
+  --text-dark: #2C1810;
+  --text-mid: #5C3D2E;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
