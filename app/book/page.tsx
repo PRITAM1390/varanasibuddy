@@ -84,7 +84,7 @@ export default function Book() {
                   </div>
                   <div>
                     <label className="block text-xs font-medium mb-1" style={{ color: 'var(--text-mid)' }}>WhatsApp Number</label>
-                    <input required type="tel" placeholder="+91 98765 43210"
+                    <input required type="tel" placeholder="+91 xxxxx xxxxx"
                       className="w-full px-3 py-2 rounded-lg text-sm outline-none"
                       style={{ border: '1px solid rgba(200,120,40,0.3)', backgroundColor: 'var(--cream)', color: 'var(--text-dark)' }} />
                   </div>
