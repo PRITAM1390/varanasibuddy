@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import config from './config'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="relative z-10 max-w-3xl mx-auto">
           <span className="inline-block text-xs font-medium px-4 py-1 rounded-full mb-6 border"
             style={{ backgroundColor: 'rgba(232,93,4,0.2)', color: '#F5C842', borderColor: 'rgba(245,200,66,0.3)' }}>
-            Varanasi's Trusted Local Guide
+            {config.tagline}
           </span>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
@@ -30,7 +31,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            No tourist traps. No overcharging. Just an honest local friend who knows every ghat, every dish, and every shortcut in the city.
+            {config.description}
           </p>
 
           <div className="flex gap-4 justify-center flex-wrap">
@@ -68,7 +69,7 @@ export default function Home() {
             {[
               { icon: '🛺', title: 'Transport', desc: 'Rickshaw, auto, toto — we negotiate so you don\'t get overcharged' },
               { icon: '🚤', title: 'Boat Rides', desc: 'Fair prices with boatmen, handled by us' },
-              { icon: '🍛', title: 'Local Food', desc: 'Kachori, lassi, malaiyo — the real spots only locals know' },
+              { icon: '🍛', title: 'Local Food', desc: 'Kachori, lassi, malaiyo, chaat — the real spots only locals know' },
               { icon: '🛍️', title: 'Shopping', desc: 'Banarasi sarees, handicrafts at authentic prices' },
               { icon: '🏛️', title: 'City Tour', desc: 'Ghats, temples, hidden gems — every lane covered' },
               { icon: '🏨', title: 'Hotel Booking', desc: 'Available in custom package — full trip planned for you' },
@@ -91,19 +92,18 @@ export default function Home() {
           Ready to see the real Varanasi?
         </h2>
         <p className="text-sm mb-6" style={{ color: 'rgba(255,255,255,0.6)' }}>
-          Book now for just ₹21 token — pay the rest only when you're happy
+          Book now for just ₹{config.tokenAmount} token — pay the rest only when you're happy
         </p>
         <Link href="/book"
           style={{ backgroundColor: 'var(--saffron)' }}
           className="text-white px-8 py-3 rounded-lg font-medium hover:opacity-90 transition">
-          Book for just ₹21
+          Book for just ₹{config.tokenAmount}
         </Link>
       </section>
 
     </div>
   )
 }
-
 
 
 // import Link from 'next/link'
@@ -113,14 +113,17 @@ export default function Home() {
 //     <div>
 
 //       {/* Hero Section */}
-//       <section style={{ backgroundColor: 'var(--text-dark)' }} className="relative px-6 py-24 text-center overflow-hidden">
-        
-//         {/* Background pattern */}
-//         <div className="absolute inset-0 opacity-5"
-//           style={{
-//             backgroundImage: 'repeating-linear-gradient(45deg, #C9781A 0, #C9781A 1px, transparent 0, transparent 50%)',
-//             backgroundSize: '20px 20px'
-//           }}
+//       <section className="relative px-6 py-24 text-center overflow-hidden"
+//         style={{
+//           backgroundImage: 'url(/hero.jpg)',
+//           backgroundSize: 'cover',
+//           backgroundPosition: 'center',
+//           backgroundRepeat: 'no-repeat',
+//         }}>
+
+//         {/* Dark Overlay */}
+//         <div className="absolute inset-0"
+//           style={{ backgroundColor: 'rgba(20, 10, 5, 0.75)' }}
 //         />
 
 //         <div className="relative z-10 max-w-3xl mx-auto">
@@ -187,7 +190,7 @@ export default function Home() {
 //               </div>
 //             ))}
 //           </div>
-//           </div>
+//         </div>
 //       </section>
 
 //       {/* CTA Strip */}
