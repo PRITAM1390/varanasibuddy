@@ -6,7 +6,7 @@ const config = {
 
   whatsapp: '918127452463',
   whatsappDisplay: '+91 81274 52463',
-  email: 'hello@varanasibuddy.in',
+  email: 'hellovaranasibuddy@gmail.com',
   instagram: '@varanasibuddy',
   instagramUrl: 'https://instagram.com/varanasibuddy',
 
